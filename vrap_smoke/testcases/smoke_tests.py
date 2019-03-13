@@ -56,6 +56,12 @@ class TestAllApps(unittest.TestCase):
         self.rand_unit.click()
         return self.unit_name_txt_normalized
 
+    def tflx_login_rand_cat_rand_unit(self):
+        self.tflx_login()
+        self.cat = self.tflx_rand_cat_selector()
+        self.unit = self.tflx_rand_unit_selector()
+        return(self.cat, self.unit)
+
 
     def tflx_watch_video(self):
         self.watch_video_btn = WebDriverWait(self.driver.instance, 10).until(
@@ -102,110 +108,99 @@ class TestAllApps(unittest.TestCase):
 
 
 
-    # @allure.step('tflx log in with proper creds')
-    # def test_tflx_login(self):
-    #     # screen = pageobjects.tflx.loginscreen.TflxLogInScrn(self.driver)
-    #     # screen.test_tflx_login()
-    #     self.tflx_login()
-    #
-    #     tflx_header = WebDriverWait(self.driver.instance, 10).until(
-    #         EC.visibility_of_element_located((By.XPATH, ".//div[@id='mainheadercontainer']")))
-    #     assert tflx_header.is_displayed()
-    #
-    #
-    # @allure.step('tflx randomly select a category')
-    # def test_tflx_select_cat(self):
-    #     self.tflx_login()
-    #
-    #     self.expected_cat = self.tflx_rand_cat_selector()
-    #     self.cat_heading = WebDriverWait(self.driver.instance, 10).until(
-    #         EC.visibility_of_element_located((By.ID, "browseHeading")))
-    #     self.cat_heading_txt = self.cat_heading.text
-    #     self.cat_heading_txt_normalized = self.cat_heading_txt.lower()
-    #     print(self.cat_heading_txt)
-    #     self.assertEqual(self.expected_cat, self.cat_heading_txt_normalized)
+    @allure.step('tflx log in with proper creds')
+    def test_tflx_login(self):
+        # screen = pageobjects.tflx.loginscreen.TflxLogInScrn(self.driver)
+        # screen.test_tflx_login()
+        self.tflx_login()
+
+        tflx_header = WebDriverWait(self.driver.instance, 10).until(
+            EC.visibility_of_element_located((By.XPATH, ".//div[@id='mainheadercontainer']")))
+        assert tflx_header.is_displayed()
+
+
+    @allure.step('tflx randomly select a category')
+    def test_tflx_select_cat(self):
+        self.tflx_login()
+
+        self.expected_cat = self.tflx_rand_cat_selector()
+        self.cat_heading = WebDriverWait(self.driver.instance, 10).until(
+            EC.visibility_of_element_located((By.ID, "browseHeading")))
+        self.cat_heading_txt = self.cat_heading.text
+        self.cat_heading_txt_normalized = self.cat_heading_txt.lower()
+        print(self.cat_heading_txt)
+        self.assertEqual(self.expected_cat, self.cat_heading_txt_normalized)
 
 
     # @allure.step('tflx randomly select a unit')
     # def test_select_unit(self):
-    #     self.tflx_login()
-    #     self.tflx_rand_cat_selector()
+    #     self.cat, self.unit = self.tflx_login_rand_cat_rand_unit()
     #
-    #     self.expected_unit = self.tflx_rand_unit_selector()
+    #     self.expected_unit = self.unit
     #     print(self.expected_unit)
     #     self.unit_name = WebDriverWait(self.driver.instance, 10).until(
     #         EC.visibility_of_element_located((By.XPATH, ".//script[@type='text/javascript']")))
-    #     #unable to get to element
+    # unable to get to element
 
-    # @allure.step('tflx open and play a video')
-    # def test_video_playing(self):
-    #     self.tflx_login()
-    #     self.tflx_rand_cat_selector()
-    #     self.tflx_rand_unit_selector()
-    #
-    #     self.tflx_watch_video()
-    #     self.pause_btn = WebDriverWait(self.driver.instance, 10).until(
-    #         EC.visibility_of_element_located((By.XPATH, ".//button[@class='vjs-play-control vjs-control vjs-button vjs-playing'][@title='Pause']")))
-    #     assert self.pause_btn.is_displayed()
-    #
-    #
-    # @allure.step('tflx open an ebook')
-    # def test_open_ebook(self):
-    #     self.tflx_login()
-    #     self.tflx_rand_cat_selector()
-    #     self.tflx_rand_unit_selector()
-    #
-    #     self.tflx_open_ebook()
-    #     self.ereader_iframe = WebDriverWait(self.driver.instance, 10).until(
-    #         EC.visibility_of_element_located((By.XPATH, ".//iframe[@id='ifrm']")))
-    #     self.driver.instance.switch_to.frame(self.ereader_iframe)
-    #     self.ereader_toc_btn = WebDriverWait(self.driver.instance, 10).until(
-    #         EC.visibility_of_element_located((By.XPATH, ".//button[@title='Open Content Drawer']")))
-    #     assert self.ereader_toc_btn.is_displayed()
-    #
-    #     self.driver.instance.switch_to.default_content()
-    #     self.ereader_close_btn = WebDriverWait(self.driver.instance, 10).until(
-    #         EC.visibility_of_element_located((By.ID, "btn_close")))
-    #     assert self.ereader_close_btn.is_displayed()
-    #
-    #
-    # @allure.step('tflx open random explore more article')
-    # def test_open_explore_more_art(self):
-    #     self.tflx_login()
-    #     self.tflx_rand_cat_selector()
-    #     self.tflx_rand_unit_selector()
-    #     self.tflx_click_ex_more()
-    #
-    #     self.expected_name = self.tflx_click_rand_ex_more_art()
-    #     self.tflx_ex_more_heading = WebDriverWait(self.driver.instance, 10).until(
-    #         EC.visibility_of_element_located((By.XPATH, ".//h1"))).text
-    #     self.tflx_ex_more_heading_normalized = self.tflx_ex_more_heading.lower()
-    #     print('art name is', self.expected_name, 'and heading name is', self.tflx_ex_more_heading_normalized)
-    #     self.assertEqual(self.expected_name, self.tflx_ex_more_heading_normalized)
-    #
-    #
-    # @allure.step('tflx open project idea')
-    # def test_open_project_idea(self):
-    #
-    #     self.tflx_login()
-    #     self.tflx_rand_cat_selector()
-    #     self.expected_name = self.tflx_rand_unit_selector()
-    #
-    #     self.tflx_click_proj_idea()
-    #     self.proj_idea_heading = WebDriverWait(self.driver.instance, 10).until(
-    #         EC.visibility_of_element_located((By.XPATH, ".//h1"))).text
-    #     self.proj_idea_proj_title = WebDriverWait(self.driver.instance, 10).until(
-    #         EC.visibility_of_element_located((By.XPATH, ".//div[@class='headingitem']/h2[contains(text(),'TrueFlix Title:')]/following-sibling::p"))).text
-    #     self.proj_idea_proj_title_normalized = self.proj_idea_proj_title.lower()
-    #     print('unit name is', self.expected_name, 'and proj idea name is', self.proj_idea_proj_title_normalized, 'and they\'re a match:', self.expected_name == self.proj_idea_proj_title_normalized)
-    #     self.assertEqual(self.expected_name, self.proj_idea_proj_title_normalized)
+    @allure.step('tflx open and play a video')
+    def test_video_playing(self):
+        self.cat, self.unit = self.tflx_login_rand_cat_rand_unit()
+
+        self.tflx_watch_video()
+        self.pause_btn = WebDriverWait(self.driver.instance, 10).until(
+            EC.visibility_of_element_located((By.XPATH, ".//button[@class='vjs-play-control vjs-control vjs-button vjs-playing'][@title='Pause']")))
+        assert self.pause_btn.is_displayed()
+
+
+    @allure.step('tflx open an ebook')
+    def test_open_ebook(self):
+        self.cat, self.unit = self.tflx_login_rand_cat_rand_unit()
+
+        self.tflx_open_ebook()
+        self.ereader_iframe = WebDriverWait(self.driver.instance, 10).until(
+            EC.visibility_of_element_located((By.XPATH, ".//iframe[@id='ifrm']")))
+        self.driver.instance.switch_to.frame(self.ereader_iframe)
+        self.ereader_toc_btn = WebDriverWait(self.driver.instance, 10).until(
+            EC.visibility_of_element_located((By.XPATH, ".//button[@title='Open Content Drawer']")))
+        assert self.ereader_toc_btn.is_displayed()
+
+        self.driver.instance.switch_to.default_content()
+        self.ereader_close_btn = WebDriverWait(self.driver.instance, 10).until(
+            EC.visibility_of_element_located((By.ID, "btn_close")))
+        assert self.ereader_close_btn.is_displayed()
+
+
+    @allure.step('tflx open random explore more article')
+    def test_open_explore_more_art(self):
+        self.cat, self.unit = self.tflx_login_rand_cat_rand_unit()
+        self.tflx_click_ex_more()
+
+        self.expected_name = self.tflx_click_rand_ex_more_art()
+        self.tflx_ex_more_heading = WebDriverWait(self.driver.instance, 10).until(
+            EC.visibility_of_element_located((By.XPATH, ".//h1"))).text
+        self.tflx_ex_more_heading_normalized = self.tflx_ex_more_heading.lower()
+        print('art name is', self.expected_name, 'and heading name is', self.tflx_ex_more_heading_normalized)
+        self.assertEqual(self.expected_name, self.tflx_ex_more_heading_normalized)
+
+
+    @allure.step('tflx open project idea')
+    def test_open_project_idea(self):
+        self.cat, self.unit = self.tflx_login_rand_cat_rand_unit()
+        self.expected_name = self.unit
+
+        self.tflx_click_proj_idea()
+        self.proj_idea_heading = WebDriverWait(self.driver.instance, 10).until(
+            EC.visibility_of_element_located((By.XPATH, ".//h1"))).text
+        self.proj_idea_proj_title = WebDriverWait(self.driver.instance, 10).until(
+            EC.visibility_of_element_located((By.XPATH, ".//div[@class='headingitem']/h2[contains(text(),'TrueFlix Title:')]/following-sibling::p"))).text
+        self.proj_idea_proj_title_normalized = self.proj_idea_proj_title.lower()
+        print('unit name is', self.expected_name, 'and proj idea name is', self.proj_idea_proj_title_normalized, 'and they\'re a match:', self.expected_name == self.proj_idea_proj_title_normalized)
+        self.assertEqual(self.expected_name, self.proj_idea_proj_title_normalized)
 
 
     @allure.step('tflx open show what you know')
     def test_open_show_what_you_know(self):
-        self.tflx_login()
-        self.tflx_rand_cat_selector()
-        self.tflx_rand_unit_selector()
+        self.cat, self.unit = self.tflx_login_rand_cat_rand_unit()
 
         self.expected_img_src = '/limelight/images/core/headers/show_know.png'
         self.tflx_click_show_know()

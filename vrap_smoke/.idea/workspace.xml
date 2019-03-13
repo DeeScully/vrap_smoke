@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c82d1994-22e6-4107-93f2-bd93dbb0479f" name="Default Changelist" comment="" />
+    <list default="true" id="c82d1994-22e6-4107-93f2-bd93dbb0479f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vrap_smoke.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vrap_smoke.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/53b3e983-9ca3-4b70-8d24-b156908975fe-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/66283fa4-68f7-49f5-8741-b3402bfa6056-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/92521d9f-8c88-4cb8-a78e-834d9276ccf7-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/db0f2d89-bd88-4f69-914e-9ebaaa16a88d-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/geckodriver.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/smoke_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/smoke_tests.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webdriver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="170">
               <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
@@ -25,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testcases/smoke_tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="206" column="37" lean-forward="true" selection-start-line="206" selection-start-column="37" selection-end-line="206" selection-end-column="37" />
+            <state relative-caret-position="482">
+              <caret line="219" column="5" lean-forward="true" selection-start-line="219" selection-start-column="5" selection-end-line="219" selection-end-column="28" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -37,11 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pageobjects/tflx/loginscreen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="43" selection-start-column="43" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -64,6 +71,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>test_tflx</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -80,8 +92,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="484" />
-    <option name="y" value="103" />
+    <option name="x" value="299" />
+    <option name="y" value="-15" />
     <option name="width" value="1153" />
     <option name="height" value="715" />
   </component>
@@ -94,42 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="vrap_smoke" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vrap_smoke" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vrap_smoke" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vrap_smoke" type="462c0819:PsiDirectoryNode" />
-              <item name="pageobjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vrap_smoke" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vrap_smoke" type="462c0819:PsiDirectoryNode" />
-              <item name="pageobjects" type="462c0819:PsiDirectoryNode" />
-              <item name="tflx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vrap_smoke" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vrap_smoke" type="462c0819:PsiDirectoryNode" />
-              <item name="testcases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vrap_smoke" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vrap_smoke" type="462c0819:PsiDirectoryNode" />
-              <item name="values" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vrap_smoke" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -146,11 +122,53 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vrap_smoke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vrap_smoke" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vrap_smoke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vrap_smoke" type="462c0819:PsiDirectoryNode" />
+              <item name=".pytest_cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vrap_smoke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vrap_smoke" type="462c0819:PsiDirectoryNode" />
+              <item name="pageobjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vrap_smoke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vrap_smoke" type="462c0819:PsiDirectoryNode" />
+              <item name="pageobjects" type="462c0819:PsiDirectoryNode" />
+              <item name="tflx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vrap_smoke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vrap_smoke" type="462c0819:PsiDirectoryNode" />
+              <item name="results" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vrap_smoke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vrap_smoke" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vrap_smoke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vrap_smoke" type="462c0819:PsiDirectoryNode" />
+              <item name="values" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -228,27 +246,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_smoke_tests_py - 2018.12.12 at 16h 53m 33s.xml">
-      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_smoke_tests_py - 2018.12.13 at 14h 38m 13s.xml">
-      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_smoke_tests_py - 2018.12.13 at 14h 44m 57s.xml">
-      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_smoke_tests_py - 2018.12.13 at 14h 46m 54s.xml">
-      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_smoke_tests_py - 2018.12.13 at 15h 04m 16s.xml">
-      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_smoke_tests_py - 2018.12.13 at 15h 06m 39s.xml">
-      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_smoke_tests_py - 2018.12.13 at 15h 07m 28s.xml">
-      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_smoke_tests_py - 2018.12.13 at 15h 07m 58s.xml">
       <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
     </history-entry>
@@ -258,12 +255,32 @@
     <history-entry file="Unittests_in_smoke_tests_py - 2018.12.13 at 15h 17m 28s.xml">
       <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_smoke_tests_py - 2019.01.04 at 15h 17m 37s.xml">
+      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_smoke_tests_py - 2019.01.04 at 15h 21m 21s.xml">
+      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_smoke_tests_py - 2019.03.13 at 14h 21m 39s.xml">
+      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_smoke_tests_py - 2019.03.13 at 14h 49m 25s.xml">
+      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_smoke_tests_py - 2019.03.13 at 14h 51m 21s.xml">
+      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_smoke_tests_py - 2019.03.13 at 15h 08m 59s.xml">
+      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_smoke_tests_py - 2019.03.13 at 15h 20m 33s.xml">
+      <configuration name="Unittests in smoke_tests.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1216" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24446785" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -274,7 +291,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32841328" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32841328" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32841328" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -311,23 +328,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pageobjects/tflx/loginscreen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -338,10 +342,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testcases/smoke_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="206" column="37" lean-forward="true" selection-start-line="206" selection-start-column="37" selection-end-line="206" selection-end-column="37" />
+        <state relative-caret-position="482">
+          <caret line="219" column="5" lean-forward="true" selection-start-line="219" selection-start-column="5" selection-end-line="219" selection-end-column="28" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
